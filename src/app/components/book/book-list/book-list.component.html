@@ -1,7 +1,9 @@
 <button class="btn btn-success" routerLink="add">ADD</button>
+
+
 <table class="table table-dark">
   <thead>
-  <tr >
+  <tr>
     <th *ngFor="let book1 of books1, index as i">{{book1}}</th>
   </tr>
   </thead>
@@ -10,7 +12,6 @@
     <th scope="row">{{i}}</th>
     <td><a [routerLink]="['detail/',book.id]">{{book.title}}</a></td>
     <td>{{book.author}}</td>
-    <td>{{book.description}}</td>
     <td><button class="btn btn-danger" (click)="delete(book.id)">Delete</button>
       <button class="btn btn-warning" [routerLink]="['update/',book.id]" >Update</button></td>
   </tr>
