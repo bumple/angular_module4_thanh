@@ -16,7 +16,8 @@ export class BookUpdateComponent implements OnInit {
   constructor(private fb: FormBuilder,
               private router: Router,
               private bookService: BookService,
-              private activatedRouter: ActivatedRoute) { }
+              private activatedRouter: ActivatedRoute,
+              ) { }
 
   ngOnInit(): void {
     // @ts-ignore
@@ -40,6 +41,9 @@ export class BookUpdateComponent implements OnInit {
     this.bookService.update(id,data).subscribe(()=>{
       this.router.navigate(['book'])
     })
+  }
+  back(){
+    this.router.navigate(['book'])
   }
 
 }

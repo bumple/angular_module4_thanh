@@ -22,9 +22,11 @@ export class BookListComponent implements OnInit {
   }
 
   delete(id:any){
+    if (confirm('are u sure?')){
     this.bookService.delete(id).subscribe(()=>{
       this.getAllData()
     })
+    }
   }
 
 

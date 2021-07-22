@@ -4,6 +4,7 @@ import {MasterComponent} from "./components/layout/master/master.component";
 import {BookListComponent} from "./components/book/book-list/book-list.component";
 import {BookAddComponent} from "./components/book/book-add/book-add.component";
 import {BookUpdateComponent} from "./components/book/book-update/book-update.component";
+import {BookDetailComponent} from "./components/book/book-detail/book-detail.component";
 
 const routes: Routes = [
   {
@@ -20,7 +21,7 @@ const routes: Routes = [
       },
       {
         path: 'book/detail/:id',
-        component: BookListComponent,
+        component: BookDetailComponent,
       },
       {
         path: 'book/update/:id',

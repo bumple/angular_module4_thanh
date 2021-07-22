@@ -31,5 +31,9 @@ export class BookAddComponent implements OnInit {
     });
   }
 
+  back(){
+    this.router.navigate(['book'])
+  }
+
 
 }

@@ -12,7 +12,7 @@
     <td>{{book.author}}</td>
     <td>{{book.description}}</td>
     <td><button class="btn btn-danger" (click)="delete(book.id)">Delete</button>
-      <button [routerLink]="['update/',book.id]" >Update</button></td>
+      <button class="btn btn-warning" [routerLink]="['update/',book.id]" >Update</button></td>
   </tr>
   </tbody>
 </table>
